@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+
+header {
+    padding-left: 20;
+    padding-top: 20;
+    padding-bottom: 20;
+    padding-right: 20;
+    display: inline;
+}
+
+h1{
+    text-align: center;
+    text-decoration-color: black;
+    
+}
+
+header nav{
+    display:inline;
+    text-align: center;
+}
+
+
+header nav ul li {
+    display: inline
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+h2{
+    border-bottom: black;
+    border-style: solid;
+    text-align: center;
+}
+
+body {
+    align-items: center;
+    background-color: whitesmoke;
+}
+ 
+p2{
+    padding-left: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color:whitesmoke;
+}
