@@ -21,8 +21,10 @@
             <img src="./assets/photos/SarterMarineTowingLogo.jpg" width="200px" height="200px"><a>Sarter Marine Towing Company</a>
         </div>
 
+        <br/><br/>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos adipisci neque, possimus fuga inventore tenetur eveniet quisquam hic obcaecati earum, velit deserunt corporis ipsa aut necessitatibus molestias accusamus cupiditate!</p>
         
-
+        <br/><br/>
         <div class="youTube">
             <iframe width="700" height="500" src="https://www.youtube.com/embed/HErt-df5wAk"></iframe>
         </div>
@@ -36,38 +38,57 @@
                 </div>
 
                 <ul class="nav-list">
-                    <li calss="nav-item">
+                    <li class="nav-item">
                         <a href="#" class="nav-link">Home</a>
                     </li>
 
-                    <li calss="nav-item">
+                    <li class="nav-item">
                         <a href="#" class="nav-link">About</a>
                     </li>
 
-                    <li calss="nav-item">
+                    <li class="nav-item">
                         <a href="#" class="nav-link">News</a>
                     </li>
 
-                    <li calss="nav-item">
+                    <li class="nav-item">
                         <a href="./SarterMarineTowing_Pictures.html" class="nav-link">Gallery</a>
                     </li>
 
-                    <li calss="nav-item">
+                    <li class="nav-item">
                         <a href="#" class="nav-link">Events</a>
                     </li>
 
-                    <li calss="nav-item">
+                    <li class="nav-item">
                         <a href="#" class="nav-link">Pricing</a>
                     </li>
 
-                    <li calss="nav-item">
+                    <li class="nav-item">
                         <a href="#" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
 
-        <script scr="script.js"></script>
+            <div class="employeeLog">
+                <p>Employee Login:</p>
+                <form action="./SarterMarineTowing_Employees.html" method="get">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Password:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+
+        <script>
+            const menuIcon = document.querySelector('.hamburger-menu');
+            const navbar = document.querySelector('.navbar');
+
+            menuIcon.addEventListener('click', () => {
+                navbar.classList.toggle('change');
+                    });
+        </script>
 
 
 
