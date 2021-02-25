@@ -17,6 +17,47 @@
 
     <body>
 
+        <div class="container">
+            <nav class="navbar">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">News</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./SarterMarineTowing_Pictures.html" class="nav-link">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Events</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
         <div class="logo">
             <img src="./assets/photos/SarterMarineTowingLogo.jpg" width="200px" height="200px"> <a href="./index.html"></a><a>Sarter Marine Towing Company</a>
         </div>
@@ -36,6 +77,16 @@
     <img src = "./assets/photos/IMG_0342.PNG">
     <img src = "./assets/photos/IMG_0369.PNG">
     <img src = "./assets/photos/IMG_0404.PNG">
+
+
+    <script>
+        const menuIcon = document.querySelector('.hamburger-menu');
+        const navbar = document.querySelector('.navbar');
+
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('change');
+                });
+    </script>
 
 </body>
 <html>
