@@ -1,89 +1,76 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
 
-        <meta Charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel ="stylesheet" href="./assets/css/style.css" />
-        <title>  Sarter Marine Towing Company </title>
-    </head>
-    
-    <!--
+<head>
+
+  <meta Charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title> Sarter Marine Towing Company </title>
+</head>
+
+<!--
     <img src ="./assets/photos/SarterMarineTowing_JimmyL.JPG" alt="JimmyL" width="330" height="200">
     <img src ="./assets/photos/SarterMarineTowingLogo.jpg" alt="Great Lakes" width="330" height="200">
     <img src ="./assets/photos/Captain.PNG" alt="Captain Stephen Ross" width="330" height="200">
     <img src ="./assets/photos/OpeningBridge.PNG" alt="Opening Bridge" width="330" height="200">
     </br>
---> 
+-->
 
-    <body>
+<body>
 
-        <div class="container">
-            <nav class="navbar">
-                <div class="hamburger-menu">
-                    <div class="line line-1"></div>
-                    <div class="line line-2"></div>
-                    <div class="line line-3"></div>
-                </div>
+<!--Navbar-->
+<nav class="navbar navbar-light light-blue lighten-4">
 
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="./index.html" class="nav-link">Home</a>
-                    </li>
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">Navbar</a>
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
-                    </li>
+  <!-- Collapse button -->
+  <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+        class="fas fa-bars fa-1x"></i></span></button>
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">News</a>
-                    </li>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
 
-                    <li class="nav-item">
-                        <a href="./SarterMarineTowing_Pictures.html" class="nav-link">Gallery</a>
-                    </li>
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    <!-- Links -->
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Events</a>
-                    </li>
+  </div>
+  <!-- Collapsible content -->
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Pricing</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+</nav>
+<!--/.Navbar-->
 
 
-        <div class="logo">
-            <img src="./assets/photos/SarterMarineTowingLogo.jpg" width="200px" height="200px"> <a>Sarter Marine Towing Company</a>
-        </div>
+
+    <!-- </br>
+    </br>
+    <img src="./assets/photos/IMG_0177.PNG">
+    <img src="./assets/photos/IMG_0189.PNG">
+    <img src="./assets/photos/IMG_0199.PNG">
+    <img src="./assets/photos/IMG_0206.PNG">
+    <img src="./assets/photos/IMG_0339.PNG">
+    <img src="./assets/photos/IMG_0342.PNG">
+    <img src="./assets/photos/IMG_0369.PNG">
+    <img src="./assets/photos/IMG_0404.PNG"> -->
 
 
-    
-</br>
-</br>
-    <img src = "./assets/photos/IMG_0177.PNG">
-    <img src = "./assets/photos/IMG_0189.PNG">
-    <img src = "./assets/photos/IMG_0199.PNG">
-    <img src = "./assets/photos/IMG_0206.PNG">
-    <img src = "./assets/photos/IMG_0339.PNG">
-    <img src = "./assets/photos/IMG_0342.PNG">
-    <img src = "./assets/photos/IMG_0369.PNG">
-    <img src = "./assets/photos/IMG_0404.PNG">
 
-
-    <script>
-        const menuIcon = document.querySelector('.hamburger-menu');
-        const navbar = document.querySelector('.navbar');
-
-        menuIcon.addEventListener('click', () => {
-            navbar.classList.toggle('change');
-                });
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    $('.navbar-toggler-toggle').dropdown()
     </script>
-
 </body>
 <html>

@@ -1,0 +1,159 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+/* NavBar */
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+/* End NavBar */
+
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.container #ImageLoader {
+  border: #111;
+  border-style: solid;
+  width: 50%;
+  margin: 20px;
+}
+
+.container #ImageArranger {
+  border: #111;
+  border-style: solid;
+  width: 50%;
+}
+
+#loadImage {
+    margin-bottom: 20px;
+}
+#arrangeImages {
+    margin-bottom: 20px;
+} */
+
+/* The Modal (background) */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    border: solid black 1px;
+    margin: 20px;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* import output */
+  .output {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 10px;
+  }
+
+  #importBtn {
+    margin: 20px;
+    height: 40px;
+    width: 60px;
+    background-color: rgba(0, 128, 0, 0.507);
+  }
+
+  #importCancelBtn {
+    height: 40px;
+    width: 60px;
+    margin-top: 20px;
+    background-color: rgba(255, 0, 0, 0.507);
+  }
