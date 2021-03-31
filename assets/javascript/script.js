@@ -1,7 +1,5 @@
 var output = document.getElementById('output');
 
-
-
 // Admin functions
 // NavBar
 function openNav() {
@@ -21,8 +19,8 @@ window.addEventListener('load', function() {
         if (this.files && this.files[0]){           
             var img = document.querySelector('img'); 
             img.src=URL.createObjectURL(this.files[0]); // set src to file url
-            img.height=150;
-            img.width=150;
+            img.height=200;
+            img.width=200;
             
             var importBtn = document.createElement("button");
             importBtn.id="importBtn";
@@ -68,4 +66,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
 // End of Admin functions
+

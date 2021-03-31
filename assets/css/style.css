@@ -19,61 +19,86 @@ body {
   margin: 20px;
 }
 
-/* MenuButtonStart */
-
-/* Icon 4 */
-
-.animated-icon3 span:nth-child(1) {
-  top: 0px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
+/* NavBar */
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-.animated-icon3 span:nth-child(2) {
-  top: 10px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-.animated-icon3 span:nth-child(3) {
-  top: 20px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
+.sidepanel a:hover {
+  color: #f1f1f1;
 }
 
-.animated-icon3.open span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 0px;
-  left: 8px;
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
 }
 
-.animated-icon3.open span:nth-child(2) {
-  width: 0%;
-  opacity: 0;
+.NavBar {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  width: 100%;
+  background-color:  #111;
 }
 
-.animated-icon3.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 21px;
-  left: 8px;
+.NavBar a {
+  position: absolute;
+  left: 75px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
 }
-/* MenuButtonEnd */
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  text-align: left;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+/* End NavBar */
 
 
 .employeeLog {
   margin: 20px;
 }
 
+.imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
 
+.images {
+  margin: 10px;
+  border: black 3px solid;
+  width: 200px;
+  height: 200px;
+
+}
