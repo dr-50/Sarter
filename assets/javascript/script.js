@@ -90,3 +90,17 @@ function login() {
   }
 };
 // End of Admin functions
+
+
+
+// Start of Image Resize on Hover
+function bigImg(x) {
+  x.style.height = "350px";
+  x.style.width = "350px";
+}
+
+function normalImg(x) {
+  x.style.height = "200px";
+  x.style.width = "200px";
+}
+// End of Image Resize on Hover
