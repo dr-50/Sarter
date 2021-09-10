@@ -5,40 +5,78 @@
 
   <meta Charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
   <!-- <link rel="stylesheet" href="./assets/css/styles_admin.css" /> -->
-  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <title> Sarter Marine Towing Company </title>
 </head>
 
 <body>
 
-    <!-- NavBar -->
-    <div id="mySidepanel" class="sidepanel">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="index.html">Home</a>
-      <a href="SarterMarineTowing_About.html">About</a>
-      <a href="./SarterMarineTowing_Pictures.html">Gallery</a>
-      <a href="SartermarineTowing_ContactUs.html">Contact</a>
-    </div>
-    <div class=NavBar>
+  <!-- NavBar -->
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Home</a>
+    <a href="SarterMarineTowing_About.html">About</a>
+    <a href="./SarterMarineTowing_Pictures.html">Gallery</a>
+    <a href="SartermarineTowing_ContactUs.html">Contact</a>
+  </div>
+  <div class=NavBar>
     <button class="openbtn" onclick="openNav()">☰</button>
     <a href="index.html">Sarter Marine Towing</a>
   </div>
 
 
-    </br>
-    </br>
-    <div class="imageContainer">
-    <img src="./assets/photos/imported/IMG_0177.PNG" class="images" id="images" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
-    <img src="./assets/photos/imported/IMG_0189.PNG" class="images" id="images" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
-    <img src="./assets/photos/imported/IMG_0199.PNG" class="images" id="images" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
-    <img src="./assets/photos/imported/IMG_0206.PNG" class="images" id="images" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
-    <img src="./assets/photos/imported/IMG_0339.PNG" class="images" id="images" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
-    <img src="./assets/photos/imported/IMG_0342.PNG" class="images" id="images" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
-    <img src="./assets/photos/imported/IMG_0369.PNG" class="images" id="images" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
-    <img src="./assets/photos/imported/IMG_0404.PNG" class="images" id="images" onmouseover="bigImg(this)" onmouseout="normalImg(this)"> 
-  </div>
+  </br>
+  </br>
+
+  <!-- <div class="imageContainer">
+    <img src="./assets/photos/imported/IMG_0177.PNG" class="images" id="myImg">
+    <img src="./assets/photos/imported/IMG_0189.PNG" class="images" id="myImg">
+    <img src="./assets/photos/imported/IMG_0199.PNG" class="images" id="myImg">
+    <img src="./assets/photos/imported/IMG_0206.PNG" class="images" id="myImg">
+    <img src="./assets/photos/imported/IMG_0339.PNG" class="images" id="myImg">
+    <img src="./assets/photos/imported/IMG_0342.PNG" class="images" id="myImg">
+    <img src="./assets/photos/imported/IMG_0369.PNG" class="images" id="myImg">
+    <img src="./assets/photos/imported/IMG_0404.PNG" class="images" id="myImg">
+  </div> -->
+
+  <!-- Trigger the Modal -->
+  <img id="myImg" src="./assets/photos/imported/IMG_0177.PNG" alt="Snow" style="width:100%;max-width:300px">
+  <img id="myImg" src="./assets/photos/imported/IMG_0189.PNG" alt="Snow" style="width:100%;max-width:300px">
+  <img id="myImg" src="./assets/photos/imported/IMG_0199.PNG" alt="Snow" style="width:100%;max-width:300px">
+  <img id="myImg" src="./assets/photos/imported/IMG_0206.PNG" alt="Snow" style="width:100%;max-width:300px">
+  <img id="myImg" src="./assets/photos/imported/IMG_0339.PNG" alt="Snow" style="width:100%;max-width:300px">
+  <img id="myImg" src="./assets/photos/imported/IMG_0342.PNG" alt="Snow" style="width:100%;max-width:300px">
+  <img id="myImg" src="./assets/photos/imported/IMG_0369.PNG" alt="Snow" style="width:100%;max-width:300px">
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+          <div class="modal-body">
+            <img id="mimg" src="">
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
 
-    <script src="./assets/javascript/script.js"></script>
+  <!-- <script src="./assets/javascript/script.js"></script>
+  <script src='./assets/javascript/scriptimage.js'></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(window).load(function(){
+      $('img').on('click', function(){
+        var src=$(this).attr('src')
+        alert(src)
+      })
+    })
+  </script>
+
+
 </body>
 <html>
