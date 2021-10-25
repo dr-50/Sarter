@@ -13,36 +13,42 @@
         text-align: center;
       }
     </style>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <title>Sarter Marine Employees</title>
-
-  <img
-    src="./assets/photos/SarterMarineTowing_JimmyL.JPG"
-    alt="JimmyL"
-    width="330"
-    height="200"
-  />
-  <img
-    src="./assets/photos/SarterMarineTowingLogo.jpg"
-    alt="Great Lakes"
-    width="330"
-    height="200"
-  />
-  <img
-    src="./assets/photos/Captain.PNG"
-    alt="Captain Stephen Ross"
-    width="330"
-    height="200"
-  />
-  <img
-    src="./assets/photos/OpeningBridge.PNG"
-    alt="Opening Bridge"
-    width="330"
-    height="200"
-  />
-  <h1>
-    <a href="./index.html"> Sarter Marine Towing Company </a>
-  </h1>
+<body>
+  <body>
+    <!-- NavBar -->
+    <!-- NavBar -->
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Home</a>
+      <a href="SarterMarineTowing_About.html">About</a>
+      <a href="#">Tug Details</a>
+      <a href="./SarterImages.html">Gallery</a>
+      <a href="SarterMarineTowing_Merch.html">Merchandise</a>
+      <a href="SartermarineTowing_ContactUs.html">Contacts</a>
+      <a href="SarterMarineTowing_Employees.html">Employees</a>
+      <a href="https://www.facebook.com/SarterMarineTowing/"><img src="./assets/photos/FindUs-FB-RGB.svg"></a>
+    </div>
+    <div class="NavBar">
+      <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
+      <a href="index.html">Sarter Marine Towing</a>
+    </div>
   <h2>Employees Only</h2>
-  <html></html>
+
+      <div class="employeeLog">
+      <p>Employee Login:</p>
+      <div>
+        <label for="username">User Name:</label>
+        <input type="text" id="username" name="username" /><br /><br />
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password" /><br /><br />
+        <button class="loginSubmit" id="loginSubmit" onclick="login()">
+          Submit
+        </button>
+      </div>
+    </div>
+    <script src="./assets/javascript/script.js"></script>
+  </body>
 </html>
